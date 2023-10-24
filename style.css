@@ -1,0 +1,10 @@
+.header {
+    position: center;
+}
+.imageHeader {
+    position: relative;
+}
+
+.imageTitle {
+    display: block;
+}
