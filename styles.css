@@ -1,50 +1,24 @@
 /* Navigation Section */
 .navbar{
-    margin-top: 12px;
-    display: inline;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip .tooltipText {
-    visibility: hidden;
-    width: 120px;
-    padding: 5px;
-    z-index: 1;
-    opacity: 0;
-    border-radius: 5px;
-    border-color:#000000;
-    text-align: center;
-
-}
-
-.tooltip .tooltipText::after {
-    content:"";
-    position: absolute;
-    top: 70%;
-    right: 100%;
-    margin-right: -5px;
-    border-width:5px;
-    border-style: solid;
-    border-color:#000000;
-}
-
-.tooltip:hover .tooltipText{
-    visibility: visible;
-    opacity: 1;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
 }
 
 .icon {
-    display: inline;
-    width: auto;
+    width: 50px;
+    height: auto;
+    display: inline-flex;
+    margin: 0px 24px;
+    padding-top: 20px;
 }
 
 ul {
     list-style-type: none;
-    display: inline;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 li {
@@ -61,6 +35,32 @@ li a:hover{
     color:rgb(69, 59, 136);
 }
 
+.tooltip {
+    position: relative;
+    display: inline;
+}
+
+.tooltip:hover:before {
+    visibility: hidden;
+    width: 120px;
+    padding: 5px;
+    z-index: 1;
+    opacity: 0;
+    border-radius: 5px;
+    border-color:#000;
+    text-align: center;
+}
+
+.tooltip:hover:after {
+    content:attr(title);
+    position: absolute;
+    top: 70%;
+    right: 100%;
+    margin-right: -5px;
+    border-width:5px;
+    border-style: solid;
+    border-color:#000;
+}
 
 /* Page Header Section*/
 
@@ -76,32 +76,32 @@ li a:hover{
 
 .homePageBackground {
     background-image: url(images/texas.jpg);
-    color: #ffffff;
+    color: #fff;
 }
 
 .austinBackground {
     background-image: url(images/austin.jpg);
-    color: #ffffff;
+    color: #fff;
 }
 
 .dallasBackground{
     background-image: url(images/dallas.jpg);
-    color: #ffffff;
+    color: #fff;
 }
 
 .sanAntonioBackground{
     background-image: url(images/san-antonio.jpg);
-    color: #000000;
+    color: #000;
 }
 
 .houstonBackground{
     background-image: url(images/houston.jpg);
-    color: #ffffff;
+    color: #fff;
 }
 
 .elPasoBackground{
     background-image: url(images/el-paso.jpg);
-    color: #ffffff;
+    color: #fff;
 }
 
 .imageTitle {
@@ -119,3 +119,27 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+
+.bodyContainer {
+    margin: 24px;
+}
+
+.sectionContainer {
+    float: left;
+    width: 50%;
+    padding: 0 10px 0 0;
+}
+
+.sectionHeader {
+    font-size: 32px;
+    padding-bottom: 8px;
+}
+
+.sectionBody {
+    display:inline-block;
+}
+.asideContainer {
+    display: flex;
+    justify-content: end;
+}
+
