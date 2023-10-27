@@ -3,7 +3,7 @@
     display: flex;
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: #000;
 }
 
 .icon {
@@ -14,25 +14,26 @@
     padding-top: 20px;
 }
 
-ul {
+.menu {
     list-style-type: none;
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: end;
 }
 
-li {
+.link {
     float: right;
     padding: 20px;
 }
 
 li a{
-    color:rgb(136, 33, 33);
+    color:rgb(255, 255, 255);
     text-align: center;
+    text-decoration: none;
 }
 
 li a:hover{
-    color:rgb(69, 59, 136);
+    color:rgb(123, 110, 211);
 }
 
 .tooltip {
@@ -72,42 +73,46 @@ li a:hover{
     background-size: cover;
     background-position: right;
     height: 300px;
+    color: #fff
 }
 
-.homePageBackground {
+#homePage {
     background-image: url(images/texas.jpg);
-    color: #fff;
 }
 
-.austinBackground {
+#austin {
     background-image: url(images/austin.jpg);
-    color: #fff;
 }
 
-.dallasBackground{
+#dallas{
     background-image: url(images/dallas.jpg);
-    color: #fff;
 }
 
-.sanAntonioBackground{
+#sanAntonio{
     background-image: url(images/san-antonio.jpg);
-    color: #000;
+    color: #000; /* This text was harder to see so I made it black*/
 }
 
-.houstonBackground{
+#houston{
     background-image: url(images/houston.jpg);
-    color: #fff;
 }
 
-.elPasoBackground{
+#elPaso{
     background-image: url(images/el-paso.jpg);
-    color: #fff;
+}
+
+#sources{
+    background-image: url(images/sources.jpg);
+}
+
+#contact{
+    background-image: url(images/contact.jpg);
 }
 
 .imageTitle {
     position: absolute;
     padding-top: 40px;
-    font-size: 60px;
+    font-size: 72px;
     text-align: center;
     font-weight: bold;
 }
@@ -118,6 +123,8 @@ li a:hover{
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    background-color: #000;
+    color:#fff;
 }
 
 .bodyContainer {
@@ -126,8 +133,9 @@ body {
 
 .sectionContainer {
     float: left;
-    width: 50%;
-    padding: 0 10px 0 0;
+    width: auto;
+    padding: 0 40px 0 0;
+    margin-right: 24px;
 }
 
 .sectionHeader {
@@ -138,8 +146,21 @@ body {
 .sectionBody {
     display:inline-block;
 }
-.asideContainer {
+
+aside {
     display: flex;
-    justify-content: end;
+    float: right;
 }
 
+.asideHeader {
+    font-size: 32px;
+    padding-bottom: 8px;
+}
+
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding:10px;
+    border: 1px solid #fff;
+}
