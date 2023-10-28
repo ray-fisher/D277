@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"/>
-        <script src="script.js" defer></script>
     </head>
 <body>
     <!-- Navigation -->
@@ -14,10 +13,8 @@
         <ul class="menu">
             <li class="link"><a href="index.html">Main Page</a></li>
             <li class="link"><a href="austin.html">Austin</a></li>
-            <li class="link"><a href="sanAntonio.html">San Antonio</a></li>
             <li class="link"><a href="houston.html">Houston</a></li>
             <li class="link"><a href="dallas.html">Dallas</a></li>
-            <li class="link"><a href="elPaso.html">El Paso</a></li>
             <li class="link"><a href="sources.html">Sources</a></li>
             <li class="link"><a href="contact.html">Contact</a></li>
         </ul>
@@ -31,42 +28,76 @@
     </div>
     <!-- Body Section -->
     <div class="bodyContainer">
-        <div class="sectionContainer">
-            <div class="sectionHeader">
+        <section>
+            <div class="header">
+                Recap of City Facts
+            </div>
+            <table>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                    <th>Year Incorporated</th>
+                    <th>Region</th>
+                    <th>Classification</th>
+                    <th>Average Income</th>
+                </tr>
+                <tr>
+                    <td>Austin</td>
+                    <td>974,447</td>
+                    <td>1839</td>
+                    <td>Central</td>
+                    <td>Urban</td>
+                    <td>$48,550</td>
+                </tr>
+                <tr>
+                    <td>Houston</td>
+                    <td>2,302,878</td>
+                    <td>1836</td>
+                    <td>Southeast</td>
+                    <td>Urban</td>
+                    <td>$35,578</td>
+                </tr>
+                <tr>
+                    <td>Dallas</td>
+                    <td>1,299,544</td>
+                    <td>1856</td>
+                    <td>North</td>
+                    <td>Urban</td>
+                    <td>$37,719</td>
+                </tr>
+            </table>
+            <div><img src="" alt=""/></div>
+        </section>
+        <aside>
+            <div class="header">
                 Questions?
             </div>
-            <div class="sectionBody">
-                <form id="contactForm" action="https://formsubmit.co/rfish95@wgu.edu" method="post">
-                    <div>
-                        <label></label>
-                        <input>    
-                    </div>
-                    <div>
-                        <label></label>
-                        <input>    
-                    </div>
-                    <div>
-                        <label></label>
-                        <input>    
-                    </div>
-                    <div>
-                        <label></label>
-                        <input>    
-                    </div>
-                    <div>
-                        <label></label>
-                        <input>    
-                    </div>
-                    <button></button>
-                </form>
-            </div>
-        </div>
-        <aside>
-            <div class="asideHeader">
-                Texas State Resources
-            </div>
+            <form id="contactForm">
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" placeholder="First Name">    
+                </div>
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" placeholder="Last Name">    
+                </div>
+                <div>
+                    <label for="emailAddress">Email Address:</label>
+                    <input type="email" id="emailAddress" placeholder="abc@email.com" required>    
+                </div>
+                <div>
+                    <label for="verifyEmail">Verify Email Address:</label>
+                    <input type="email" id="verifyEmail" placeholder="abc@email.com" required>    
+                </div>
+                <div>
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" rows="5" placeholder="Type your message here.."></textarea>    
+                </div>
+                <button type="submit" onclick='verifyEmailAddress()'>Submit</button>
+            </form>
         </aside>
         </div>
     </div>
+    <script src="script.js" defer></script>
 </body>    
 </html>

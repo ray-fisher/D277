@@ -4,6 +4,7 @@
     position: sticky;
     top: 0;
     background-color: #000;
+    z-index: 1000;
 }
 
 .icon {
@@ -88,17 +89,8 @@ li a:hover{
     background-image: url(images/dallas.jpg);
 }
 
-#sanAntonio{
-    background-image: url(images/san-antonio.jpg);
-    color: #000; /* This text was harder to see so I made it black*/
-}
-
 #houston{
     background-image: url(images/houston.jpg);
-}
-
-#elPaso{
-    background-image: url(images/el-paso.jpg);
 }
 
 #sources{
@@ -131,36 +123,57 @@ body {
     margin: 24px;
 }
 
-.sectionContainer {
+section {
     float: left;
     width: auto;
-    padding: 0 40px 0 0;
+    padding: 0 50px 24px 0;
     margin-right: 24px;
 }
 
-.sectionHeader {
-    font-size: 32px;
-    padding-bottom: 8px;
-}
-
-.sectionBody {
-    display:inline-block;
+section li a {
+    text-decoration: underline;
 }
 
 aside {
-    display: flex;
+    display: grid;
     float: right;
 }
 
-.asideHeader {
+aside li a {
+    text-decoration: underline;
+}
+
+.header {
     font-size: 32px;
-    padding-bottom: 8px;
 }
 
 table {
     border-collapse: collapse;
 }
+
 th, td {
     padding:10px;
     border: 1px solid #fff;
 }
+
+form {
+    background-color: #2c2a2a;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+}
+
+label {
+    display: flex;
+}
+
+input, textarea {
+    width:250px
+}
+
+button {
+    padding-top: 5px;
+    margin-left: 200px
+}
+
+
