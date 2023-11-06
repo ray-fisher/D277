@@ -38,7 +38,6 @@ li a:hover{
 }
 
 .tooltip {
-    position: relative;
     display: inline;
 }
 
@@ -55,7 +54,6 @@ li a:hover{
 
 .tooltip:hover:after {
     content:attr(title);
-    position: absolute;
     top: 70%;
     right: 100%;
     margin-right: -5px;
@@ -102,7 +100,6 @@ li a:hover{
 }
 
 .imageTitle {
-    position: absolute;
     padding-top: 40px;
     font-size: 72px;
     text-align: center;
@@ -136,7 +133,6 @@ section li a {
 
 aside {
     display: grid;
-    float: right;
 }
 
 aside li a {
@@ -174,6 +170,20 @@ input, textarea {
 button {
     padding-top: 5px;
     margin-left: 200px
+}
+
+.floatRight {
+    float: right;
+}
+
+.leftContainer {
+    position: absolute;
+}
+
+.rightContainer {
+    position: relative;
+    margin-left: 400px;
+    padding-top: 20px;
 }
 
 
